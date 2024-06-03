@@ -1,0 +1,24 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-oZ5pWJiYwb6B5A+2Q0FmAj7POoHOrnIbbVj5s51qz+Xgfcgk4x6Zc/1fcEInRVAr" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Expense Tracker</h1>
+    </div>
+    <form id="expense-form">
+      <input type="text" id="item-name" placeholder="Enter item name" required>
+      <input type="number" id="item-amount" placeholder="Enter item amount" step="0.01" required>
+      <button type="submit">Add Item</button>
+    </form>
+    <button id="view-expenses-btn" onclick="location.href='expenses.html'">View Expenses</button>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
